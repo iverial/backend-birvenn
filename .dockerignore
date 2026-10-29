@@ -1,0 +1,17 @@
+**/bin/
+**/obj/
+.git/
+.github/
+.vs/
+.idea/
+*.db
+*.db-shm
+*.db-wal
+.env
+.env.*
+!.env.example
+docs/
+README.md
+docker-compose.yml
+render.yaml
+*.http

@@ -1,0 +1,40 @@
+# Blueprint de Render para probar gratis (plan free: se duerme a los 15 min sin trafico, ~1 min en despertar).
+# No es para produccion. La base se crea aparte en Neon o Supabase y su URL se pega en ConnectionStrings__Default.
+services:
+  - type: web
+    name: birvenn-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: Database__Provider
+        value: Postgres
+      # postgresql://usuario:clave@host:5432/base (Neon o Supabase)
+      - key: ConnectionStrings__Default
+        sync: false
+      # Render genera un valor aleatorio largo
+      - key: Jwt__Key
+        generateValue: true
+      # URL de tu front en Vercel, sin barra final
+      - key: Urls__Frontend
+        sync: false
+      - key: Cors__Origins
+        sync: false
+      # URL publica de ESTE servicio (https://birvenn-api.onrender.com): la usa Mercado Pago para el webhook
+      - key: Urls__PublicApi
+        sync: false
+      # Cookies entre dominios distintos (Vercel -> Render) requieren SameSite=None; mejor usar el proxy de Next (ver docs/INTEGRACION-FRONT.md)
+      - key: Jwt__CookieSameSite
+        value: Lax
+      - key: Payments__Provider
+        value: MercadoPago
+      - key: MercadoPago__AccessToken
+        sync: false
+      - key: MercadoPago__WebhookSecret
+        sync: false
+      - key: Admin__Email
+        sync: false
+      - key: Admin__Password
+        sync: false

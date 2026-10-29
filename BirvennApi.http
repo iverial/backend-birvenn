@@ -1,0 +1,150 @@
+### Pruebas manuales (extension "REST Client" de VS Code, o Rider/Visual Studio).
+### Levantar la API:  ASPNETCORE_ENVIRONMENT=Development dotnet run --urls http://localhost:5180
+@host = http://localhost:5180
+@origin = http://localhost:3000
+
+### Salud
+GET {{host}}/health
+
+### Reglas comerciales y metodos de envio/pago
+GET {{host}}/api/config
+
+### Catalogo
+GET {{host}}/api/products?category=buzos&sort=precio-asc
+
+###
+GET {{host}}/api/products/hoodie-flight-arena
+
+###
+GET {{host}}/api/products/search?q=campera&limit=6
+
+###
+GET {{host}}/api/categories
+
+### Registro (devuelve la cookie de sesion y el cupon de bienvenida)
+# @name register
+POST {{host}}/api/auth/register
+Content-Type: application/json
+Origin: {{origin}}
+
+{
+  "firstName": "Ana",
+  "lastName": "Pérez",
+  "email": "ana@example.com",
+  "password": "clave12345",
+  "newsletter": true,
+  "acceptTerms": true
+}
+
+### Login
+POST {{host}}/api/auth/login
+Content-Type: application/json
+Origin: {{origin}}
+
+{ "email": "ana@example.com", "password": "clave12345", "remember": true }
+
+### Mi usuario (usa la cookie)
+GET {{host}}/api/auth/me
+
+### Validar un cupon
+POST {{host}}/api/coupons/validate
+Content-Type: application/json
+
+{ "code": "STREET10", "subtotal": 100000 }
+
+### Presupuesto: totales calculados por el servidor
+POST {{host}}/api/checkout/quote
+Content-Type: application/json
+
+{
+  "items": [{ "productId": "p-001", "colorId": "negro", "size": "M", "quantity": 2 }],
+  "couponCode": "STREET10",
+  "shippingMethod": "estandar",
+  "paymentMethod": "transferencia"
+}
+
+### Checkout (invitado o con sesion). Con Mercado Pago devuelve payment.redirectUrl
+# @name checkout
+POST {{host}}/api/checkout
+Content-Type: application/json
+Origin: {{origin}}
+
+{
+  "clientOrderId": "ord_demo_001",
+  "email": "ana@example.com",
+  "firstName": "Ana",
+  "lastName": "Pérez",
+  "phone": "11 5555-1234",
+  "street": "Honduras",
+  "number": "5000",
+  "apartment": "3B",
+  "city": "CABA",
+  "province": "CABA",
+  "zip": "C1414",
+  "notes": "",
+  "shippingMethod": "estandar",
+  "paymentMethod": "mercadopago",
+  "acceptTerms": true,
+  "items": [{ "productId": "p-001", "colorId": "arena", "size": "M", "quantity": 1 }]
+}
+
+### Pedido por id publico (el de /checkout/exito?orden=...)
+@orderId = {{checkout.response.body.$.order.id}}
+GET {{host}}/api/orders/{{orderId}}
+
+### Confirmar contra Mercado Pago al volver del checkout (payment_id viene en la URL de retorno)
+POST {{host}}/api/orders/{{orderId}}/reconcile
+Content-Type: application/json
+
+{ "paymentId": "1234567890" }
+
+### Mis pedidos
+GET {{host}}/api/orders
+
+### Simular un estado de pago (solo Payments:Provider=Mock con Payments:AllowSimulation=true)
+POST {{host}}/api/dev/payments/simulate
+Content-Type: application/json
+
+{ "orderId": "{{orderId}}", "status": "approved" }
+
+### Contacto
+POST {{host}}/api/contact
+Content-Type: application/json
+
+{ "name": "Ana", "email": "ana@example.com", "topic": "pedido", "orderNumber": "BRV-ABC234", "message": "Hola, quiero saber donde esta mi pedido." }
+
+### Newsletter
+POST {{host}}/api/newsletter
+Content-Type: application/json
+
+{ "email": "ana@example.com" }
+
+### ------------------ Admin (iniciar sesion con el usuario Admin) ------------------
+
+### Login admin (en Development: admin@birvenn.local / DevAdmin123)
+POST {{host}}/api/auth/login
+Content-Type: application/json
+Origin: {{origin}}
+
+{ "email": "admin@birvenn.local", "password": "DevAdmin123" }
+
+### Pedidos pendientes
+GET {{host}}/api/admin/orders?status=pendiente&page=1&pageSize=20
+
+### Confirmar una transferencia recibida
+POST {{host}}/api/admin/orders/{{orderId}}/confirm-payment
+Origin: {{origin}}
+
+### Avanzar un pedido (preparando, enviado, entregado, cancelado)
+PATCH {{host}}/api/admin/orders/{{orderId}}/status
+Content-Type: application/json
+Origin: {{origin}}
+
+{ "status": "enviado", "trackingCode": "OCA123456" }
+
+### Fijar stock de un talle
+PUT {{host}}/api/admin/products/p-001/stock
+Content-Type: application/json
+Origin: {{origin}}
+
+{ "size": "M", "quantity": 20 }

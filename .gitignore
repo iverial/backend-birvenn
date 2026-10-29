@@ -1,0 +1,24 @@
+## .NET
+bin/
+obj/
+*.user
+.vs/
+.idea/
+*.suo
+
+## Bases locales de desarrollo (SQLite)
+*.db
+*.db-shm
+*.db-wal
+
+## Secretos: nunca commitear valores reales
+.env
+.env.*
+!.env.example
+appsettings.Production.json
+appsettings.*.local.json
+
+## Otros
+launchSettings.local.json
+*.log
+.DS_Store

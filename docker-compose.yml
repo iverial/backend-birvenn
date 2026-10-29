@@ -1,0 +1,37 @@
+# Desarrollo local con Postgres real: docker compose up --build
+# (usa el .env para el resto de la configuracion: cp .env.example .env)
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: birvenn
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-birvenn-local}
+      POSTGRES_DB: birvenn
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U birvenn -d birvenn"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+
+  api:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      Database__Provider: Postgres
+      ConnectionStrings__Default: Host=db;Port=5432;Database=birvenn;Username=birvenn;Password=${POSTGRES_PASSWORD:-birvenn-local}
+      # Sin proxy delante en local
+      Network__TrustProxy: "false"
+      Jwt__CookieSecure: "false"
+
+volumes:
+  pgdata:

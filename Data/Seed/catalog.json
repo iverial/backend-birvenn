@@ -1,0 +1,949 @@
+{
+  "categories": [
+    {
+      "slug": "remeras",
+      "name": "Remeras",
+      "description": "Algodón peinado 240 g, cortes boxy y oversize.",
+      "kind": "tee",
+      "tone": "#D9C6A5",
+      "sortOrder": 0
+    },
+    {
+      "slug": "buzos",
+      "name": "Buzos",
+      "description": "Frisa pesada 420 g. Hoodies y crewnecks.",
+      "kind": "hoodie",
+      "tone": "#141312",
+      "sortOrder": 1
+    },
+    {
+      "slug": "camperas",
+      "name": "Camperas",
+      "description": "Capas técnicas para la ciudad.",
+      "kind": "jacket",
+      "tone": "#B39570",
+      "sortOrder": 2
+    },
+    {
+      "slug": "pantalones",
+      "name": "Pantalones",
+      "description": "Cargos y joggers de calce relajado.",
+      "kind": "cargo",
+      "tone": "#3A3733",
+      "sortOrder": 3
+    },
+    {
+      "slug": "shorts",
+      "name": "Shorts",
+      "description": "Fleece y gabardina para el verano urbano.",
+      "kind": "shorts",
+      "tone": "#F1EBDF",
+      "sortOrder": 4
+    },
+    {
+      "slug": "accesorios",
+      "name": "Accesorios",
+      "description": "Gorras, beanies, bolsos y medias.",
+      "kind": "cap",
+      "tone": "#7C6650",
+      "sortOrder": 5
+    }
+  ],
+  "colors": [
+    {
+      "id": "arena",
+      "name": "Arena",
+      "hex": "#D9C6A5"
+    },
+    {
+      "id": "hueso",
+      "name": "Hueso",
+      "hex": "#F1EBDF"
+    },
+    {
+      "id": "negro",
+      "name": "Negro",
+      "hex": "#141312"
+    },
+    {
+      "id": "camel",
+      "name": "Camel",
+      "hex": "#B39570"
+    },
+    {
+      "id": "grafito",
+      "name": "Grafito",
+      "hex": "#3A3733"
+    },
+    {
+      "id": "blanco",
+      "name": "Blanco",
+      "hex": "#FAFAF7"
+    },
+    {
+      "id": "tierra",
+      "name": "Tierra",
+      "hex": "#7C6650"
+    },
+    {
+      "id": "oliva",
+      "name": "Oliva",
+      "hex": "#5E5F48"
+    }
+  ],
+  "products": [
+    {
+      "care": [
+        "Lavar del revés a máximo 30 °C",
+        "Secar a la sombra en posición horizontal",
+        "No usar lavandina"
+      ],
+      "rating": 4.9,
+      "reviewsCount": 186,
+      "id": "p-001",
+      "slug": "hoodie-flight-arena",
+      "name": "Hoodie Flight",
+      "category": "buzos",
+      "kind": "hoodie",
+      "graphic": "bird",
+      "price": 89900,
+      "colors": [
+        "arena",
+        "negro",
+        "hueso"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "XS": 4,
+        "S": 12,
+        "M": 18,
+        "L": 15,
+        "XL": 7,
+        "XXL": 2
+      },
+      "tags": [
+        "best-seller",
+        "esencial"
+      ],
+      "fit": "oversize",
+      "collection": "Drop 01 — Vuelo",
+      "shortDescription": "Frisa 420 g con isotipo bordado en 3D.",
+      "description": "El hoodie que define a BIRVENN. Frisa invisible de 420 g, capucha doble sin cordones y el isotipo bordado en relieve en el pecho. Hombro caído y puños con elastano para un calce oversize que no pierde forma.",
+      "details": [
+        "Bordado 3D en pecho",
+        "Capucha doble forrada",
+        "Bolsillo canguro",
+        "Puños y cintura rib 2x2"
+      ],
+      "materials": "80% algodón, 20% poliéster reciclado. Frisa invisible 420 g/m².",
+      "createdAt": "2026-03-02"
+    },
+    {
+      "care": [
+        "Lavar del revés en agua fría",
+        "No usar secarropas",
+        "Planchar a baja temperatura evitando la estampa"
+      ],
+      "rating": 4.8,
+      "reviewsCount": 241,
+      "id": "p-002",
+      "slug": "remera-seven-boxy",
+      "name": "Remera Seven Boxy",
+      "category": "remeras",
+      "kind": "tee",
+      "graphic": "seven",
+      "price": 42900,
+      "colors": [
+        "hueso",
+        "negro",
+        "arena"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "XS": 6,
+        "S": 20,
+        "M": 25,
+        "L": 22,
+        "XL": 10,
+        "XXL": 5
+      },
+      "tags": [
+        "best-seller"
+      ],
+      "fit": "boxy",
+      "collection": "Drop 01 — Vuelo",
+      "shortDescription": "Jersey 240 g, corte boxy y estampa puff en espalda.",
+      "description": "Corte boxy cuadrado con largo recortado y cuello rib grueso. Estampa en tinta puff sobre la espalda con el 7 que forma el pájaro BIRVENN.",
+      "details": [
+        "Estampa puff en espalda",
+        "Cuello rib 3 cm",
+        "Costuras dobles",
+        "Etiqueta tejida en ruedo"
+      ],
+      "materials": "100% algodón peinado 24/1. Jersey 240 g/m².",
+      "createdAt": "2026-03-02"
+    },
+    {
+      "care": [
+        "Lavar del revés en agua fría",
+        "No usar secarropas",
+        "Planchar a baja temperatura evitando la estampa"
+      ],
+      "rating": 4.8,
+      "reviewsCount": 132,
+      "id": "p-003",
+      "slug": "cargo-urban-tierra",
+      "name": "Cargo Urban",
+      "category": "pantalones",
+      "kind": "cargo",
+      "graphic": "none",
+      "price": 98500,
+      "colors": [
+        "tierra",
+        "negro",
+        "oliva"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 5,
+        "M": 9,
+        "L": 11,
+        "XL": 6,
+        "XXL": 1
+      },
+      "tags": [
+        "best-seller",
+        "nuevo"
+      ],
+      "fit": "relaxed",
+      "collection": "Drop 02 — Asfalto",
+      "shortDescription": "Gabardina ripstop con 6 bolsillos y ruedo ajustable.",
+      "description": "Cargo de pierna amplia en gabardina ripstop con cintura elástica y cinturón tejido. Bolsillos fuelle laterales y ruedo con cordón para pasar de wide a jogger en un segundo.",
+      "details": [
+        "6 bolsillos",
+        "Ruedo ajustable con cordón",
+        "Cinturón tejido con hebilla metálica",
+        "Rodillas articuladas"
+      ],
+      "materials": "98% algodón, 2% elastano. Ripstop 280 g/m².",
+      "createdAt": "2026-07-15"
+    },
+    {
+      "care": [
+        "Lavar a mano en agua fría",
+        "No planchar",
+        "Secar colgada"
+      ],
+      "rating": 4.9,
+      "reviewsCount": 58,
+      "id": "p-004",
+      "slug": "campera-nest-puffer",
+      "name": "Campera Nest Puffer",
+      "category": "camperas",
+      "kind": "jacket",
+      "graphic": "wordmark",
+      "price": 189900,
+      "compareAtPrice": 219900,
+      "colors": [
+        "negro",
+        "camel"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 3,
+        "M": 4,
+        "L": 5,
+        "XL": 2
+      },
+      "tags": [
+        "limitado",
+        "sale"
+      ],
+      "fit": "boxy",
+      "collection": "Drop 02 — Asfalto",
+      "shortDescription": "Puffer corto con relleno térmico y cuello alto.",
+      "description": "Puffer corto de silueta boxy con exterior repelente al agua y relleno de fibra térmica. Cuello alto con forro polar y wordmark BIRVENN reflectivo en la espalda.",
+      "details": [
+        "Repelente al agua",
+        "Wordmark reflectivo",
+        "Bolsillos interiores",
+        "Edición numerada de 300 unidades"
+      ],
+      "materials": "Exterior 100% nylon. Relleno fibra térmica 160 g.",
+      "createdAt": "2026-06-01"
+    },
+    {
+      "care": [
+        "Lavar del revés a máximo 30 °C",
+        "Secar a la sombra en posición horizontal",
+        "No usar lavandina"
+      ],
+      "rating": 4.7,
+      "reviewsCount": 97,
+      "id": "p-005",
+      "slug": "crewneck-seal-hueso",
+      "name": "Crewneck Seal",
+      "category": "buzos",
+      "kind": "crewneck",
+      "graphic": "seal",
+      "price": 79900,
+      "colors": [
+        "hueso",
+        "grafito"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "XS": 2,
+        "S": 8,
+        "M": 10,
+        "L": 9,
+        "XL": 4
+      },
+      "tags": [
+        "best-seller"
+      ],
+      "fit": "oversize",
+      "collection": "Drop 01 — Vuelo",
+      "shortDescription": "Buzo cuello redondo con sello Est. 2026.",
+      "description": "Crewneck de frisa pesada con el sello circular BIRVENN Est. 2026 estampado en alta densidad. Silueta oversize con hombro caído.",
+      "details": [
+        "Estampa alta densidad",
+        "Cuello rib reforzado",
+        "Hombro caído",
+        "Etiqueta interna impresa"
+      ],
+      "materials": "80% algodón, 20% poliéster. Frisa 400 g/m².",
+      "createdAt": "2026-03-10"
+    },
+    {
+      "care": [
+        "Lavar a mano",
+        "No usar secarropas"
+      ],
+      "rating": 4.8,
+      "reviewsCount": 310,
+      "id": "p-006",
+      "slug": "gorra-7-panel",
+      "name": "Gorra 7 Panel",
+      "category": "accesorios",
+      "kind": "cap",
+      "graphic": "bird",
+      "price": 34900,
+      "colors": [
+        "negro",
+        "arena",
+        "hueso"
+      ],
+      "sizes": [
+        "U"
+      ],
+      "stock": {
+        "U": 40
+      },
+      "tags": [
+        "best-seller"
+      ],
+      "fit": "unico",
+      "collection": "Esenciales",
+      "shortDescription": "Gabardina lavada con isotipo bordado.",
+      "description": "Gorra de 6 paneles con visera curva y cierre metálico regulable. Isotipo bordado al frente y wordmark en la parte trasera.",
+      "details": [
+        "Cierre metálico regulable",
+        "Ojales bordados",
+        "Banda interna antitranspirante"
+      ],
+      "materials": "100% algodón gabardina lavada.",
+      "createdAt": "2026-02-20"
+    },
+    {
+      "care": [
+        "Lavar del revés en agua fría",
+        "No usar secarropas",
+        "Planchar a baja temperatura evitando la estampa"
+      ],
+      "rating": 4.6,
+      "reviewsCount": 145,
+      "id": "p-007",
+      "slug": "remera-wordmark-negra",
+      "name": "Remera Wordmark",
+      "category": "remeras",
+      "kind": "tee",
+      "graphic": "wordmark",
+      "price": 39900,
+      "colors": [
+        "negro",
+        "blanco"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "XS": 10,
+        "S": 15,
+        "M": 20,
+        "L": 18,
+        "XL": 12,
+        "XXL": 6
+      },
+      "tags": [
+        "esencial"
+      ],
+      "fit": "regular",
+      "collection": "Esenciales",
+      "shortDescription": "Básica de jersey con wordmark al pecho.",
+      "description": "La básica BIRVENN. Jersey peinado con wordmark serigrafiado al pecho y calce regular apenas holgado.",
+      "details": [
+        "Serigrafía al agua",
+        "Cuello rib",
+        "Pre-encogida"
+      ],
+      "materials": "100% algodón peinado. Jersey 200 g/m².",
+      "createdAt": "2026-01-15"
+    },
+    {
+      "care": [
+        "Lavar del revés a máximo 30 °C",
+        "Secar a la sombra en posición horizontal",
+        "No usar lavandina"
+      ],
+      "rating": 4.8,
+      "reviewsCount": 121,
+      "id": "p-008",
+      "slug": "jogger-flight-negro",
+      "name": "Jogger Flight",
+      "category": "pantalones",
+      "kind": "jogger",
+      "graphic": "bird",
+      "price": 74900,
+      "colors": [
+        "negro",
+        "arena",
+        "grafito"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 7,
+        "M": 12,
+        "L": 10,
+        "XL": 5,
+        "XXL": 3
+      },
+      "tags": [
+        "best-seller"
+      ],
+      "fit": "relaxed",
+      "collection": "Drop 01 — Vuelo",
+      "shortDescription": "Frisa pesada, puño rib e isotipo bordado.",
+      "description": "Jogger a juego con el Hoodie Flight. Cintura con cordón plano, bolsillos laterales profundos y bolsillo trasero con cierre.",
+      "details": [
+        "Bolsillo trasero con cierre",
+        "Cordón plano con terminales metálicos",
+        "Isotipo bordado en muslo"
+      ],
+      "materials": "80% algodón, 20% poliéster reciclado. Frisa 420 g/m².",
+      "createdAt": "2026-03-02"
+    },
+    {
+      "care": [
+        "Lavar del revés en agua fría",
+        "No usar secarropas",
+        "Planchar a baja temperatura evitando la estampa"
+      ],
+      "rating": 4.7,
+      "reviewsCount": 39,
+      "id": "p-009",
+      "slug": "longsleeve-asfalto",
+      "name": "Longsleeve Asfalto",
+      "category": "remeras",
+      "kind": "longsleeve",
+      "graphic": "seven",
+      "price": 52900,
+      "colors": [
+        "grafito",
+        "hueso"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 6,
+        "M": 8,
+        "L": 7,
+        "XL": 3
+      },
+      "tags": [
+        "nuevo"
+      ],
+      "fit": "oversize",
+      "collection": "Drop 02 — Asfalto",
+      "shortDescription": "Manga larga oversize con estampa en mangas.",
+      "description": "Manga larga oversize con estampa del 7 en el pecho y texto en las mangas. Puños rib finos y ruedo recto.",
+      "details": [
+        "Estampa en pecho y mangas",
+        "Puños rib",
+        "Jersey pesado"
+      ],
+      "materials": "100% algodón. Jersey 240 g/m².",
+      "createdAt": "2026-08-20"
+    },
+    {
+      "care": [
+        "Lavar del revés en agua fría",
+        "No usar secarropas",
+        "Planchar a baja temperatura evitando la estampa"
+      ],
+      "rating": 4.6,
+      "reviewsCount": 64,
+      "id": "p-010",
+      "slug": "short-fleece-arena",
+      "name": "Short Fleece",
+      "category": "shorts",
+      "kind": "shorts",
+      "graphic": "bird",
+      "price": 49900,
+      "compareAtPrice": 58900,
+      "colors": [
+        "arena",
+        "negro"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 4,
+        "M": 6,
+        "L": 6,
+        "XL": 2
+      },
+      "tags": [
+        "sale"
+      ],
+      "fit": "relaxed",
+      "collection": "Esenciales",
+      "shortDescription": "Short de frisa liviana sobre la rodilla.",
+      "description": "Short de frisa liviana con cintura elástica, cordón y bolsillos laterales. Isotipo bordado en la pierna.",
+      "details": [
+        "Largo sobre la rodilla",
+        "Bolsillos laterales",
+        "Isotipo bordado"
+      ],
+      "materials": "100% algodón. Frisa liviana 300 g/m².",
+      "createdAt": "2026-01-10"
+    },
+    {
+      "care": [
+        "Lavar a mano en agua fría",
+        "Secar en plano"
+      ],
+      "rating": 4.9,
+      "reviewsCount": 47,
+      "id": "p-011",
+      "slug": "beanie-rib-negro",
+      "name": "Beanie Rib",
+      "category": "accesorios",
+      "kind": "beanie",
+      "graphic": "seal",
+      "price": 27900,
+      "colors": [
+        "negro",
+        "camel",
+        "hueso"
+      ],
+      "sizes": [
+        "U"
+      ],
+      "stock": {
+        "U": 25
+      },
+      "tags": [
+        "nuevo"
+      ],
+      "fit": "unico",
+      "collection": "Drop 02 — Asfalto",
+      "shortDescription": "Tejido rib doble con parche tejido.",
+      "description": "Beanie de tejido rib doble con dobladillo y parche tejido con el sello BIRVENN.",
+      "details": [
+        "Tejido doble",
+        "Parche tejido",
+        "Talle único"
+      ],
+      "materials": "50% lana merino, 50% acrílico.",
+      "createdAt": "2026-09-05"
+    },
+    {
+      "care": [
+        "Limpiar con paño húmedo"
+      ],
+      "rating": 4.8,
+      "reviewsCount": 29,
+      "id": "p-012",
+      "slug": "bolso-crossbody-route",
+      "name": "Crossbody Route",
+      "category": "accesorios",
+      "kind": "bag",
+      "graphic": "bird",
+      "price": 45900,
+      "colors": [
+        "negro",
+        "oliva"
+      ],
+      "sizes": [
+        "U"
+      ],
+      "stock": {
+        "U": 2
+      },
+      "tags": [
+        "limitado"
+      ],
+      "fit": "unico",
+      "collection": "Drop 02 — Asfalto",
+      "shortDescription": "Bolso cruzado técnico con hebilla de liberación rápida.",
+      "description": "Bolso cruzado en cordura con compartimento principal, bolsillo frontal y bolsillo trasero antirrobo. Correa regulable con hebilla de liberación rápida.",
+      "details": [
+        "Cordura 600D",
+        "Bolsillo antirrobo",
+        "Correa regulable"
+      ],
+      "materials": "100% poliéster cordura 600D.",
+      "createdAt": "2026-08-01"
+    },
+    {
+      "care": [
+        "Lavar del revés a máximo 30 °C",
+        "Secar a la sombra en posición horizontal",
+        "No usar lavandina"
+      ],
+      "rating": 4.8,
+      "reviewsCount": 33,
+      "id": "p-013",
+      "slug": "hoodie-asfalto-zip",
+      "name": "Hoodie Asfalto",
+      "category": "buzos",
+      "kind": "hoodie",
+      "graphic": "wordmark",
+      "price": 94900,
+      "colors": [
+        "grafito",
+        "camel"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 5,
+        "M": 7,
+        "L": 6,
+        "XL": 3
+      },
+      "tags": [
+        "nuevo",
+        "limitado"
+      ],
+      "fit": "boxy",
+      "collection": "Drop 02 — Asfalto",
+      "shortDescription": "Boxy de frisa lavada con wordmark craquelado.",
+      "description": "Hoodie boxy de frisa lavada a la piedra con wordmark craquelado al frente. Capucha amplia y largo recortado.",
+      "details": [
+        "Lavado a la piedra",
+        "Estampa craquelada",
+        "Corte boxy recortado"
+      ],
+      "materials": "100% algodón. Frisa lavada 440 g/m².",
+      "createdAt": "2026-09-12"
+    },
+    {
+      "care": [
+        "Lavar del revés en agua fría",
+        "No usar secarropas",
+        "Planchar a baja temperatura evitando la estampa"
+      ],
+      "rating": 4.7,
+      "reviewsCount": 52,
+      "id": "p-014",
+      "slug": "remera-seal-arena",
+      "name": "Remera Seal",
+      "category": "remeras",
+      "kind": "tee",
+      "graphic": "seal",
+      "price": 44900,
+      "colors": [
+        "arena",
+        "grafito"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "XS": 3,
+        "S": 9,
+        "M": 12,
+        "L": 10,
+        "XL": 4
+      },
+      "tags": [
+        "nuevo"
+      ],
+      "fit": "oversize",
+      "collection": "Drop 02 — Asfalto",
+      "shortDescription": "Oversize con sello Est. 2026 en la espalda.",
+      "description": "Remera oversize con el sello BIRVENN Est. 2026 en la espalda y mini isotipo al pecho.",
+      "details": [
+        "Estampa frente y espalda",
+        "Hombro caído",
+        "Jersey pesado"
+      ],
+      "materials": "100% algodón peinado. Jersey 240 g/m².",
+      "createdAt": "2026-09-20"
+    },
+    {
+      "care": [
+        "Lavar a mano",
+        "No planchar"
+      ],
+      "rating": 4.8,
+      "reviewsCount": 88,
+      "id": "p-015",
+      "slug": "campera-coach-hueso",
+      "name": "Coach Jacket",
+      "category": "camperas",
+      "kind": "jacket",
+      "graphic": "bird",
+      "price": 129900,
+      "colors": [
+        "hueso",
+        "negro"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 4,
+        "M": 6,
+        "L": 5,
+        "XL": 2
+      },
+      "tags": [
+        "best-seller"
+      ],
+      "fit": "regular",
+      "collection": "Esenciales",
+      "shortDescription": "Rompevientos con broches y forro de malla.",
+      "description": "Coach jacket rompevientos con broches a presión, forro de malla y cordón en el ruedo. Isotipo grande estampado en la espalda.",
+      "details": [
+        "Broches a presión",
+        "Forro de malla",
+        "Cordón en ruedo"
+      ],
+      "materials": "100% nylon tafeta. Forro 100% poliéster.",
+      "createdAt": "2026-04-18"
+    },
+    {
+      "care": [
+        "Lavar en agua fría"
+      ],
+      "rating": 4.6,
+      "reviewsCount": 203,
+      "id": "p-016",
+      "slug": "medias-crew-pack",
+      "name": "Medias Crew x3",
+      "category": "accesorios",
+      "kind": "socks",
+      "graphic": "wordmark",
+      "price": 19900,
+      "colors": [
+        "blanco",
+        "negro"
+      ],
+      "sizes": [
+        "U"
+      ],
+      "stock": {
+        "U": 60
+      },
+      "tags": [
+        "esencial"
+      ],
+      "fit": "unico",
+      "collection": "Esenciales",
+      "shortDescription": "Pack de 3 pares con planta acolchada.",
+      "description": "Pack de tres pares de medias caña alta con planta acolchada y wordmark tejido.",
+      "details": [
+        "Pack x3",
+        "Planta acolchada",
+        "Talle 39 a 44"
+      ],
+      "materials": "75% algodón, 22% poliamida, 3% elastano.",
+      "createdAt": "2026-01-05"
+    },
+    {
+      "care": [
+        "Lavar del revés en agua fría",
+        "No usar secarropas",
+        "Planchar a baja temperatura evitando la estampa"
+      ],
+      "rating": 4.7,
+      "reviewsCount": 18,
+      "id": "p-017",
+      "slug": "cargo-short-ripstop",
+      "name": "Cargo Short Ripstop",
+      "category": "shorts",
+      "kind": "shorts",
+      "graphic": "none",
+      "price": 56900,
+      "colors": [
+        "oliva",
+        "tierra",
+        "negro"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 3,
+        "M": 5,
+        "L": 4,
+        "XL": 1
+      },
+      "tags": [
+        "nuevo"
+      ],
+      "fit": "relaxed",
+      "collection": "Drop 02 — Asfalto",
+      "shortDescription": "Short cargo de ripstop con bolsillos fuelle.",
+      "description": "Short cargo en ripstop con cintura elástica, cinturón tejido y bolsillos fuelle laterales.",
+      "details": [
+        "Bolsillos fuelle",
+        "Cinturón tejido",
+        "Ripstop liviano"
+      ],
+      "materials": "100% algodón ripstop 220 g/m².",
+      "createdAt": "2026-10-01"
+    },
+    {
+      "care": [
+        "Lavar del revés a máximo 30 °C",
+        "Secar a la sombra en posición horizontal",
+        "No usar lavandina"
+      ],
+      "rating": 4.7,
+      "reviewsCount": 41,
+      "id": "p-018",
+      "slug": "crewneck-flight-camel",
+      "name": "Crewneck Flight",
+      "category": "buzos",
+      "kind": "crewneck",
+      "graphic": "bird",
+      "price": 76900,
+      "compareAtPrice": 86900,
+      "colors": [
+        "camel",
+        "negro"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "stock": {
+        "S": 2,
+        "M": 3,
+        "L": 2
+      },
+      "tags": [
+        "sale"
+      ],
+      "fit": "oversize",
+      "collection": "Drop 01 — Vuelo",
+      "shortDescription": "Crewneck con isotipo bordado tono sobre tono.",
+      "description": "Crewneck de frisa con isotipo bordado tono sobre tono y cuello rib reforzado.",
+      "details": [
+        "Bordado tono sobre tono",
+        "Frisa invisible",
+        "Rib reforzado"
+      ],
+      "materials": "80% algodón, 20% poliéster. Frisa 400 g/m².",
+      "createdAt": "2026-04-01"
+    }
+  ]
+}
