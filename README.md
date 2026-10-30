@@ -6,6 +6,10 @@ Backend de la tienda BIRVENN (streetwear). Reemplaza el "backend simulado" del f
 
 > El front es [`cor2ba/birven`](https://github.com/cor2ba/birven) (Next.js 16, repo privado). Cómo conectarlo: [`docs/INTEGRACION-FRONT.md`](docs/INTEGRACION-FRONT.md).
 
+> **Entorno de prueba:** <https://backend-birvenn.onrender.com> ([`/health`](https://backend-birvenn.onrender.com/health)). Corre en Render con plan gratuito: se duerme tras 15 minutos sin uso (la primera llamada tarda cerca de un minuto) y puede estar suspendido. Usa Mercado Pago en **modo prueba**, no cobra dinero real.
+>
+> Documentación: [`docs/FUNCIONALIDADES.md`](docs/FUNCIONALIDADES.md) (todo lo que hace la API) · [`docs/GUIA-FRONT.md`](docs/GUIA-FRONT.md) (qué puede agregar el front).
+
 ---
 
 ## Qué resuelve
