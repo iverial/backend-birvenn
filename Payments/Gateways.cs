@@ -100,6 +100,8 @@ public class MercadoPagoGateway(
         return text.Length <= 250 ? text : text[..247] + "...";
     }
 
-    // Mercado Pago pide ISO 8601 con milisegundos y offset.
-    private static string Iso(DateTime utc) => new DateTimeOffset(DateTime.SpecifyKind(utc, DateTimeKind.Utc)).ToString("yyyy-MM-dd'T'HH:mm:ss.fffzzz");
+    // Mercado Pago pide ISO 8601 con milisegundos y offset. Se usa "Z" y no "+00:00": System.Text.Json escapa el "+"
+    // en el JSON (secuencia u002B) y Mercado Pago no lo decodifica en las fechas (400 error_parsing_date).
+    private static string Iso(DateTime utc) =>
+        DateTime.SpecifyKind(utc, DateTimeKind.Utc).ToString("yyyy-MM-dd'T'HH:mm:ss.fff'Z'", System.Globalization.CultureInfo.InvariantCulture);
 }
